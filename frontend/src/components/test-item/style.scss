@@ -1,0 +1,23 @@
+.test-item {
+	background-color: $white;
+	padding: 10px 20px;
+	border-radius: 11px;
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		font-size: 16px;
+	}
+
+	&__create-date {
+	}
+
+	&__bottom {
+	}
+
+	&__description {
+	}
+}

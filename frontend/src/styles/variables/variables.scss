@@ -1,0 +1,30 @@
+$black: #000;
+$white: #fff;
+$white-hover: #acacac;
+$bg-blue: #0099ff;
+$container: 1200px;
+$error: rgb(236, 51, 14);
+$bg-blue-hover: #006bb3;
+
+$lg: 1400px;
+$md: 1200px;
+$sm: 960px;
+$xs: 768px;
+html {
+	background-color: #a8d7e1;
+}
+body {
+	color: $black;
+	font: 400 16px/16px;
+	margin-bottom: 100px;
+}
+
+a {
+	color: #000;
+}
+
+.container {
+	max-width: $container;
+	padding: 0 10px;
+	margin: 0 auto;
+}

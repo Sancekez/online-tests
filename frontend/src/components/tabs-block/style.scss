@@ -1,0 +1,27 @@
+.tabs-block {
+	display: flex;
+	flex-wrap: nowrap;
+	max-width: 400px;
+	margin: 0 auto 30px;
+
+   &__button {
+      background-color: $bg-blue;
+      color: $white;
+		border: 1px solid $black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      width: 100%;
+      display: block;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+      &:hover {
+         background-color: $bg-blue-hover;
+         transition: all 0.3s;
+      }
+   }
+}

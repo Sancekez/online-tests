@@ -1,0 +1,1 @@
+"use strict";var mongoose=require("mongoose"),Schema=mongoose.Schema,TeacherSchema=new Schema({email:{type:String,required:!0,unique:!0},password:{type:String,required:!0},name:{type:String,required:!0},surName:{type:String}}),TeacherModel=mongoose.model("Teacher",TeacherSchema);module.exports.TeacherModel=TeacherModel;
