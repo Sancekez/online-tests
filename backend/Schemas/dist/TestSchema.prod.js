@@ -1,1 +1,0 @@
-"use strict";var mongoose=require("mongoose"),Schema=mongoose.Schema,QuizSchema=new Schema({title:{type:String,required:!0},subtitle:{type:String},class:{type:String},quiz:{type:Array,required:!0},password:{type:String,required:!0},name:{type:String,required:!0},surName:{type:String}}),UserModel=mongoose.model("User",UserSchema);module.exports.UserModel=UserModel;

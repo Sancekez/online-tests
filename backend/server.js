@@ -5,10 +5,8 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
-const { checkAuthToken } = require("./jwt/checkAuth");
 const { authMiddleware } = require("./middlewares/auth-middlewares");
 
-// const userRegister = require("./services/user-service").userRegister;
 const {
    registration,
    activate,
@@ -51,4 +49,4 @@ app.post("/logout", logout);
 app.get("/refresh", refresh);
 app.get("/quizes", authMiddleware, getAllquizes);
 
-app.post("/quiz", checkAuthToken, createQuiz);
+app.post("/quiz", authMiddleware, createQuiz);
